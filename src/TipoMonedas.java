@@ -1,2 +1,4 @@
-public record TipoMonedas(double USD, double ARS, double EUR, double CLP, double RSD) {
+import java.util.Map;
+
+public record TipoMonedas(Map<String, Double> conversion_rates) {
 }

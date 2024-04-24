@@ -23,15 +23,15 @@ public class ConsultaDatos {
             TipoMonedas tipoMonedas = gson.fromJson(json,TipoMonedas.class);
             System.out.println(tipoMonedas);
             switch (monedaComparar){
-                case "USD": convertido = tipoMonedas.USD();
+                case "USD": convertido = tipoMonedas.conversion_rates().get("USD");
                 break;
-                case "ARS": convertido = tipoMonedas.ARS();
+                case "ARS": convertido = tipoMonedas.conversion_rates().get("ARS");
                 break;
-                case "EUR": convertido = tipoMonedas.EUR();
+                case "EUR": convertido = tipoMonedas.conversion_rates().get("EUR");
                 break;
-                case "CLP": convertido = tipoMonedas.CLP();
+                case "CLP": convertido = tipoMonedas.conversion_rates().get("CLP");
                 break;
-                case "RSD": convertido = tipoMonedas.RSD();
+                case "RSD": convertido = tipoMonedas.conversion_rates().get("RSD");
                 break;
             }
         } catch (IOException e) {

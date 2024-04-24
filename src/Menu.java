@@ -25,17 +25,23 @@ public class Menu {
                 """);
             opc = teclado.nextInt();
             switch (opc){
-                case 1: consulta.consulta("USD","ARS");
+                case 1:
+                    System.out.println("El valor de 1 Dólar son " + consulta.consulta("USD","ARS") + " Pesos Argentinos.");
                 break;
-                case 2: consulta.consulta("ARS", "USD");
+                case 2:
+                    System.out.println("El valor de 1 Peso Argentino son " + consulta.consulta("ARS", "USD") + " Dólares");
                 break;
-                case 3: consulta.consulta("USD","RSD");
+                case 3:
+                    System.out.println("El valor de 1 Dólar son " + consulta.consulta("USD","RSD") + " Reales.");
                 break;
-                case 4: consulta.consulta("RSD","USD");
+                case 4:
+                    System.out.println("El valor de 1 Real es de " + consulta.consulta("RSD","USD") + " Dólares.");
                 break;
-                case 5: consulta.consulta("ARS","CLP");
+                case 5:
+                    System.out.println("El valor de 1 Peso Argentino son " + consulta.consulta("ARS","CLP") + " Pesos Chilenos.");
                 break;
-                case 6: consulta.consulta("CLP","ARS");
+                case 6:
+                    System.out.println("El valor de 1 Peso Chileno es " + consulta.consulta("CLP","ARS") + " Pesos Argentinos.");
                 break;
                 case 7: break;
                 case 8, 9, 0:
