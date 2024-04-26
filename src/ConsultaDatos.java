@@ -21,7 +21,6 @@ public class ConsultaDatos {
             String json;
             json = response.body();
             TipoMonedas tipoMonedas = gson.fromJson(json,TipoMonedas.class);
-            System.out.println(tipoMonedas);
             switch (monedaComparar){
                 case "USD": convertido = tipoMonedas.conversion_rates().get("USD");
                 break;
